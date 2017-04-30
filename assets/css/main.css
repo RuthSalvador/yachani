@@ -102,6 +102,13 @@ h2 {
   background: lightgreen;
 }
 
+
+.page-box{
+  display: none;
+}
+.show{
+  display: block;
+}
 .right {
   float: right;
   z-index: 1;
