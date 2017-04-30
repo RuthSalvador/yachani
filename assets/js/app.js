@@ -39,11 +39,13 @@ for (var i = 0; i < 3; i++) {
   var buton = document.createElement('button');
     buton.appendChild(document.createTextNode(decision[0].alternatives[i]));
     buton.setAttribute('id','d'+i);
-    buton.addEventListener('click',function(){
+    buton.addEventListener('click',function(e){
+      e.preventDefault();
       if(this.id == "d0"){
-        alert("camino1"+this.id);
         for (var i = 4; i < 6; i++) {
             docFragment.appendChild(crearImgs(images[i],i));
+            console.log(crearImgs(images[i],i));
+            // contenedor.appendChild(docFragment);
         }
         docFragment.appendChild(crearPregunta(preguntas[1].question));
         for (var i = 0; i < 3; i++) {
@@ -56,6 +58,9 @@ for (var i = 0; i < 3; i++) {
         for (var i = 0; i < 3; i++) {
           docFragment.appendChild(crearAlternativas(preguntas[2].alternatives[i],"p1"));
         }
+        alert("camino1"+this.id);
+        contenedor.appendChild(docFragment);
+
       }
       ///END Camino 0
       if(this.id == "d1"){
@@ -73,6 +78,7 @@ for (var i = 0; i < 3; i++) {
           docFragment.appendChild(crearAlternativas(preguntas[4].alternatives[i],"p1"));
         }
         docFragment.appendChild(crearImgs(images[10],10));
+        contenedor.appendChild(docFragment);
 
       }
       //endn Camino 1
@@ -95,6 +101,7 @@ for (var i = 0; i < 3; i++) {
         }
         docFragment.appendChild(crearImgs(images[16],16));
       }
+      contenedor.appendChild(docFragment);
 
     });
     docFragment.appendChild(buton);
