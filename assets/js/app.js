@@ -110,8 +110,8 @@ contenedor.appendChild(docFragment);
     figure.classList.add("class","js-figure");
     image.setAttribute("alt","lecturas");
     image.src=e.src;//+id+".jpg";
-    spanPrevious.classList.add("class",'icon-before');
-    spanNext.classList.add("class",'icon-next');
+    spanPrevious.setAttribute("class",'icon-before left');
+    spanNext.setAttribute("class",'icon-next right');
 
     figure.appendChild(image);
     figure.appendChild(spanPrevious);
