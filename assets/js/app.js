@@ -2,7 +2,11 @@ var slideIndex = 1;
 var contenedor = document.getElementById('galeria');
 var docFragment=document.createDocumentFragment();
 var option = document.getElementById('literal').addEventListener('click',function(e){
+
   e.preventDefault();
+
+  localStorage.setItem("login", document.getElementById('username').value);
+
   showSlide(1);
 });
 
@@ -53,11 +57,11 @@ for (var i = 0; i < 3; i++) {
     buton.addEventListener('click',function(e){
       e.preventDefault();
       console.log(slideIndex);
-      if(this.id == "d0"){
-        slideIndex +=7;
-        plusSlide(slideIndex+1);
-        console.log(slideIndex);
-        for (var i = 4; i < 6; i++) {
+      // if(this.id == "d0"){
+        //slideIndex +=7;
+        // plusSlide(7);
+        // console.log(slideIndex);
+        for (var i = 4; i < 5; i++) {
             docFragment.appendChild(crearImgs(images[i],i));
             console.log(crearImgs(images[i],i));
         }
@@ -71,7 +75,7 @@ for (var i = 0; i < 3; i++) {
           div.appendChild(crearAlternativas(preguntas[1].alternatives[i],"p1"));
         }
         docFragment.appendChild(div);
-        for (var i = 6; i < 8; i++) {
+        for (var i = 5; i < 7; i++) {
             docFragment.appendChild(crearImgs(images[i],i));
         }
         var div2 = document.createElement('figure');
@@ -84,12 +88,12 @@ for (var i = 0; i < 3; i++) {
         alert("camino1"+this.id);
         contenedor.appendChild(docFragment);
 
-      }
+      // }
       ///END Camino 0
-      if(this.id == "d1"){
+      // if(this.id == "d1"){
         alert("camino2"+this.id);
 
-        docFragment.appendChild(crearImgs(images[8],8));
+        docFragment.appendChild(crearImgs(images[7],7));
 
         var div = document.createElement('div');
         div.appendChild(crearPregunta(preguntas[3].question));
@@ -99,24 +103,25 @@ for (var i = 0; i < 3; i++) {
         }
         docFragment.appendChild(div);
 
+        docFragment.appendChild(crearImgs(images[8],8));
         docFragment.appendChild(crearImgs(images[9],9));
         var div2 = document.createElement('div');
-        div.classList.add('page-box');
+        div2.classList.add('page-box');
         div2.appendChild(crearPregunta(preguntas[4].question));
         for (var i = 0; i < 3; i++) {
           div2.appendChild(crearAlternativas(preguntas[4].alternatives[i],"p1"));
         }
         docFragment.appendChild(div2);
 
-        docFragment.appendChild(crearImgs(images[10],10));
         contenedor.appendChild(docFragment);
 
-      }
+      // }
       //endn Camino 1
-      if(this.id == "d2"){
+      // if(this.id == "d2"){
         alert("camino3"+this.id);
 
-        for (var i = 11; i < 14; i++) {
+
+        for (var i = 9; i < 12; i++) {
             docFragment.appendChild(crearImgs(images[i],i));
         }
         var div = document.createElement('div');
@@ -126,24 +131,27 @@ for (var i = 0; i < 3; i++) {
           div.appendChild(crearAlternativas(preguntas[5].alternatives[i],"p1"));
         }
         docFragment.appendChild(div);
-        for (var i = 14; i < 16; i++) {
+        for (var i = 12; i < 16; i++) {
             docFragment.appendChild(crearImgs(images[i],i));
         }
         var div2 = document.createElement('div');
-        div.classList.add('page-box');
+        div2.classList.add('page-box');
         div2.appendChild(crearPregunta(preguntas[6].question));
         for (var i = 0; i < 3; i++) {
           div2.appendChild(crearAlternativas(preguntas[6].alternatives[i],"p1"));
         }
         docFragment.appendChild(div2);
 
-        docFragment.appendChild(crearImgs(images[16],16));
-      }
+      // }
       contenedor.appendChild(docFragment);
 
     });
     divDe.appendChild(buton);
     docFragment.appendChild(divDe);
+  }
+  if(localStorage.getItem("login")){
+    document.getElementById('user').innerHTML = '  Ohh! '+ localStorage.getItem('login') + ' este es tu puntaje';
+    document.getElementById('user').style.display = 'block';
   }
 contenedor.appendChild(docFragment);
 
@@ -179,6 +187,7 @@ function crearPregunta(parrafo){
   pregunta.innerHTML = parrafo;
   var spanPrevious=document.createElement('span');
   var spanNext=document.createElement('span');
+  // div.classList.add('page-box');
   spanPrevious.setAttribute("class",'icon-before left');
   spanNext.setAttribute("class",'icon-next right');
   spanPrevious.addEventListener('click',function(e){
@@ -195,7 +204,6 @@ function crearPregunta(parrafo){
 }
 function crearAlternativas(alternativa,id){
   var div = document.createElement('div');
-  // div.classList.add('page-box');
   var input = document.createElement('input');
   input.setAttribute('type','radio');
   input.setAttribute('name','p'+id);
@@ -206,12 +214,14 @@ function crearAlternativas(alternativa,id){
 }
 
 function plusSlide(n) {
+  console.log("n"+n);
   showSlide(slideIndex += n);
+  console.log(slideIndex+"slide");
 }
 
 function showSlide(index){
    var slide = document.getElementsByClassName("page-box");
-   if (index > slide.length) {slideIndex = 1}
+   if (index > 15) {slideIndex = 1}
    if (index < 1) {slideIndex = slide.length}
    for (var i = 0; i < slide.length; i++) {
       slide[i].style.display = "none";
