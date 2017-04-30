@@ -20,7 +20,7 @@ h2 {
 
 .content #protagonista,
 .content #grupo {
-  display: block;
+  /*display: block;*/
   color: white;
   font-size: 3.5vw;
   border: none;
@@ -120,9 +120,7 @@ h2 {
   z-index: 1;
   margin-bottom: auto;
 }
-/*#galeria {
-  display: none;
-}*/
+
 
 #d0,#d1, #d2{
   background: #88ec78;
@@ -135,6 +133,7 @@ h2 {
   font-size: 16px;
 
 }
+
 
 
 .carmelo,.paco, .agua, .principito{
