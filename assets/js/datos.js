@@ -1,4 +1,4 @@
-var textos = [{title:"El Principito",portada:"",
+var textos = [{portada:"El Principito",
               content:[{id:2,image:"assets/img/principito",parrafo:"",quiz:{question:"Donde estás1?",type:"literal",alternatives:["Donde ","en la escuela"]}},
                        {id:2,image:"assets/img/principito",parrafo:"",quiz:{question:"Donde estás1?",type:"literal",alternatives:["Donde ","en la escuela"]}},
                        {id:2,image:"assets/img/principito",parrafo:"",quiz:{question:"Donde estás1?",type:"literal",alternatives:["Donde ","en la escuela"]}},
@@ -9,11 +9,11 @@ var textos = [{title:"El Principito",portada:"",
                        {id:7,image:"assets/img/principito",parrafo:""}]
               }];
 
-  // funtion crearTitle(texto){
-  //   var title = document.createElement('h1');
-  //   title.innerHTML = texto.title;
-  //   return title;
-  // }
+  function crearTitle(texto){
+    var title = document.createElement('h1');
+    title.innerHTML = texto.title;
+    return title;
+  }
   // function agregarImagen(texto){
   //   var imagen = document.createElement('img');
   //   imagen.setAttribute('src',texto.image);
