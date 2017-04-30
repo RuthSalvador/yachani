@@ -6,8 +6,8 @@ var option = document.getElementById('literal').addEventListener('click',functio
   showSlide(1);
 });
 
-var url = "assets/img/fabula-0.jpg";
-var portada =[{src:"assets/img/fabula-1.jpg"}]
+var url = "assets/img/img-";
+var portada =[{src:"assets/img/portada-"}]
 var images=[{src :url},{src :url},{src :url},{src :url},{src :url},{src :url},{src :url},{src :url},{src :url},{src :url},{src :url},
             {src :url},{src :url},{src :url},{src :url},{src :url}];
 // var preguntas=[{question:"pregunta1?",type:"literal",alternatives:["Donde ","en la escuela",""]},{question:"pregunta2?",type:"literal",alternatives:["Donde ","en la escuela",""]},
@@ -155,7 +155,7 @@ contenedor.appendChild(docFragment);
 
     figure.classList.add("page-box","js-figure");
     image.setAttribute("alt","lecturas");
-    image.src=e.src;//+id+".jpg";
+    image.src=e.src+id+".svg";
     spanPrevious.setAttribute("class",'icon-before left');
     spanNext.setAttribute("class",'icon-next right');
 
