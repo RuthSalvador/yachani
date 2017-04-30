@@ -9,46 +9,27 @@
         fill: url(#pattern);
       }
 
-      .cls-3, .cls-6, .cls-9 {
-        fill: none;
-      }
-
-      .cls-3, .cls-6 {
-        stroke: #fff;
-      }
-
       .cls-3 {
-        stroke-width: 5px;
-      }
-
-      .cls-4 {
         stroke: #95989a;
         opacity: 0.8;
       }
 
-      .cls-10, .cls-5, .cls-7 {
+      .cls-4, .cls-7 {
         fill: #fff;
       }
 
-      .cls-5 {
-        font-size: 55px;
-      }
-
-      .cls-5, .cls-7 {
+      .cls-4 {
+        font-size: 100px;
         font-family: SegoeUI-Light, Segoe UI;
         font-weight: 300;
       }
 
-      .cls-6 {
-        stroke-width: 2px;
-      }
-
-      .cls-7 {
-        font-size: 100px;
-      }
-
-      .cls-8 {
+      .cls-5 {
         stroke: none;
+      }
+
+      .cls-6 {
+        fill: none;
       }
     </style>
     <pattern id="pattern" preserveAspectRatio="xMidYMid slice" width="100%" height="100%" viewBox="0 0 992 592">
@@ -59,17 +40,12 @@
     </clipPath>
   </defs>
   <g id="Fin-2" class="cls-1">
-    <rect class="cls-10" x="4845" y="-2516" width="1024" height="768"/>
+    <rect class="cls-7" x="4845" y="-2516" width="1024" height="768"/>
     <rect id="Rectangle_487" data-name="Rectangle 487" class="cls-2" width="1024" height="768" transform="translate(4845 -2516)"/>
-    <path id="Path_250" data-name="Path 250" class="cls-3" d="M2469.5,20.1l-33.6,33.5,33.6,33.6" transform="translate(2437 -2518)"/>
-    <g id="Rectangle_488" data-name="Rectangle 488" class="cls-4" transform="translate(4845 -2021)">
-      <rect class="cls-8" width="1024" height="273"/>
-      <rect class="cls-9" x="0.5" y="0.5" width="1023" height="272"/>
+    <g id="Rectangle_488" data-name="Rectangle 488" class="cls-3" transform="translate(4845 -2021)">
+      <rect class="cls-5" width="1024" height="273"/>
+      <rect class="cls-6" x="0.5" y="0.5" width="1023" height="272"/>
     </g>
-    <g id="Group_109" data-name="Group 109" transform="translate(4868 -2523)">
-      <text id="Siguiente" class="cls-5" transform="translate(480 752)"><tspan x="-105.717" y="0">Siguiente</tspan></text>
-      <path id="Path_251" data-name="Path 251" class="cls-6" d="M2463.767,20.1,2435.9,47.883l27.867,27.866" transform="translate(3074.808 777.441) rotate(180)"/>
-    </g>
-    <text id="FIN" class="cls-7" transform="translate(5342 -1867)"><tspan x="-70.093" y="0">FIN</tspan></text>
+    <text id="FIN" class="cls-4" transform="translate(5342 -1867)"><tspan x="-70.093" y="0">FIN</tspan></text>
   </g>
 </svg>

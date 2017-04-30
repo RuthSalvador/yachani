@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="-15553 1159 1024 768">
+  <defs>
+    <style>
+      .cls-1 {
+        clip-path: url(#clip-Inicio_Logo_Nombre_s_);
+      }
+
+      .cls-2, .cls-3, .cls-7 {
+        fill: #fff;
+      }
+
+      .cls-2 {
+        stroke: #95989a;
+      }
+
+      .cls-3 {
+        font-size: 56px;
+        font-family: SegoeUI, Segoe UI;
+      }
+
+      .cls-4 {
+        font-size: 150px;
+        font-family: Cavorting-Regular, Cavorting;
+        letter-spacing: 0.083em;
+      }
+
+      .cls-5 {
+        stroke: none;
+      }
+
+      .cls-6 {
+        fill: none;
+      }
+    </style>
+    <clipPath id="clip-Inicio_Logo_Nombre_s_">
+      <rect x="-15553" y="1159" width="1024" height="768"/>
+    </clipPath>
+  </defs>
+  <g id="Inicio_Logo_Nombre_s_" data-name="Inicio/Logo+Nombre(s)" class="cls-1">
+    <rect class="cls-7" x="-15553" y="1159" width="1024" height="768"/>
+    <g id="Rectangle_33" data-name="Rectangle 33" class="cls-2" transform="translate(-15553 1159)">
+      <rect class="cls-5" width="1024" height="768"/>
+      <rect class="cls-6" x="0.5" y="0.5" width="1023" height="767"/>
+    </g>
+    <text id="Iniciar" class="cls-3" transform="translate(-15018 1671)"><tspan x="-73.773" y="0">Iniciar</tspan></text>
+    <text id="Yachani" class="cls-4" transform="translate(-15257 1598)"><tspan x="0" y="0">Yachani</tspan></text>
+  </g>
+</svg>
