@@ -119,3 +119,32 @@ h2 {
   z-index: 1;
   margin-bottom: auto;
 }
+#galeria {
+  display: none;
+}
+
+
+.carmelo,.paco, .agua, .principito{
+  background-repeat: no-repeat;
+  background-size: 100%;
+  display: inline-block;
+  margin: 5px 35px;
+  width: 242px;
+  height: 126px;
+}
+
+.carmelo {
+  background-image: url(../img/carmelo.jpg);
+}
+
+.paco {
+  background-image: url(../img/paco.jpg);
+}
+
+.agua {
+  background-image: url(../img/agua.png);
+}
+
+.principito {
+  background-image: url(../img/principito.jpg);
+}
