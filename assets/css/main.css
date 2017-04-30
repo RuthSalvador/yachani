@@ -102,3 +102,10 @@ h2 {
 .content #literal {
   background: lightgreen;
 }
+
+.page-box{
+  display: none;
+}
+.show{
+  display: block;
+}
