@@ -106,9 +106,7 @@ h2 {
 .page-box{
   display: none;
 }
-.show{
-  display: block;
-}
+
 .right {
   float: right;
   z-index: 1;
