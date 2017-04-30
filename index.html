@@ -11,7 +11,7 @@
 </head>
 <body>
   <form action="" id="form" class="form-content">
-    <section id="page-demo" class="content">
+    <section id="page-demo" class="content page-dem">
       <div class="logo">
         <img src="assets/img/yachani-logo-w.png" alt="Yachani">
       </div>
@@ -21,13 +21,13 @@
       <button id="protagonista">Protagonista</button>
       <button id="grupo">Grupo</button>
     </section>
-    <section id="page1">
-      <div class="play">
-        <input type="text" placeholder="Tu nombre">
+    <section id="page1" class="start">
+      <div class="play" >
+        <input type="text" id = "username" placeholder="Tu nombre">
         <span id="start" class="icon-play"></span>
       </div>
     </section>
-    <section id="page2" class="content">
+    <section id="page2" class="page2 content">
       <h2>Género literario</h2>
       <button id="comedy">Comedia</button>
       <button id="mistery">Misterio</button>
@@ -35,24 +35,27 @@
       <button id="literal">Varios</button>
     </section>
 
-    <section id="page3" class="content lecturas">
+    <section id="page3" class="content lecturas" >
       <h2>Lecturas</h2>
       <div class="grids">
-        <div class="sprite carmelo"></div>
-        <div class="sprite paco"></div>
-        <div class="sprite principito"></div>
-        <div class="sprite anita"></div>
+        <div class="carmelo"></div>
+        <div class="paco"></div>
+        <div class="agua"></div>
+        <div class="principito"></div>
       </div>
     </section>
     <section id="galeria" class="content portada">
 
     </section>
-    <section id="page5" class="content cuento">
-
+    <section id="resultado" class="page-box cuento">
+        <span id = 'user'></span>
+        <img src="assets/img/resultado.svg" alt="">
     </section>
     <section id="page6" class="content question">
 
   </form>
+  <script type="text/javascript" src="assets/js/datos.js"></script>
+
 <script type="text/javascript" src="assets/js/app.js"></script>
 </body>
 </html>
