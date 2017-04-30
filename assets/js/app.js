@@ -42,7 +42,6 @@ document.getElementById('literal').onclick=function(e){
   document.getElementById('page3').style.display="block";
 }
 
-var slideIndex = 1;
 var contenedor = document.getElementById('galeria');
 var docFragment=document.createDocumentFragment();
 // var grids = document.getElementsByClassName("grids");
@@ -55,17 +54,21 @@ var docFragment=document.createDocumentFragment();
 //   })
 // };
 
+var slideIndex = 1;
 
 var option = document.getElementById('agua').addEventListener('click',function(e){
 
   e.preventDefault();
-  document.getElementsByClassName("page3")[0].classList.remove("page-box");
-  document.getElementById('page3').style.display="none";
+  // document.getElementsByClassName("page3")[0].classList.remove("page-box");
   // document.getElementsByClassName("portada")[0].classList.remove("page-box");
   // document.getElementsByClassName("portada")[0].classList.remove("page-box");
   // document.getElementsByTagName('figure')[0].classList.remove("page-box");
-  // document.getElementsByTagName('figure')[0].style.display="block";
+  document.getElementsByClassName('page3')[0].classList.remove('page-box');
+  document.getElementById('page3').style.display="none";
 
+  document.getElementsByClassName('galeria')[0].style.display="block";
+  // contenedor.style.display = "block";
+  // document.getElementsByTagName('figure')[0].classList.remove('page-box');
   showSlide(1);
 });
 
@@ -116,7 +119,6 @@ for (var i = 0; i < 3; i++) {
           div2.appendChild(crearAlternativas(preguntas[2].alternatives[i],"p1"));
         }
         docFragment.appendChild(div2);
-        alert("camino1"+this.id);
         contenedor.appendChild(docFragment);
 
       // }
