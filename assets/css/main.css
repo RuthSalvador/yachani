@@ -55,7 +55,9 @@ h2 {
 }
 .play input:focus {
   content: "";
-  border: none;
+  outline: none;
+  font-size: 2vw;
+  transition: 1.5s;
 }
 ::placeholder {
   color: darkgray;
