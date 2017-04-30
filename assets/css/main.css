@@ -20,7 +20,7 @@ h2 {
 
 .content #protagonista,
 .content #grupo {
-  display: block;
+  /*display: block;*/
   color: white;
   font-size: 3.5vw;
   border: none;
@@ -120,6 +120,7 @@ h2 {
   z-index: 1;
   margin-bottom: auto;
 }
+<<<<<<< HEAD
 /*#galeria {
   display: none;
 }*/
