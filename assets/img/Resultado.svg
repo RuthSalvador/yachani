@@ -1,0 +1,91 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="11449 -2516 1024 768">
+  <defs>
+    <style>
+      .cls-1 {
+        clip-path: url(#clip-Resultado);
+      }
+
+      .cls-12, .cls-2, .cls-5 {
+        fill: none;
+      }
+
+      .cls-2 {
+        stroke: #fff;
+        stroke-width: 5px;
+      }
+
+      .cls-13, .cls-3 {
+        fill: #fff;
+      }
+
+      .cls-3 {
+        stroke: #95989a;
+      }
+
+      .cls-4 {
+        font-size: 55px;
+        font-family: SegoeUI-Light, Segoe UI;
+        font-weight: 300;
+      }
+
+      .cls-5 {
+        stroke: #000;
+        stroke-width: 2px;
+      }
+
+      .cls-6 {
+        font-size: 73px;
+      }
+
+      .cls-10, .cls-6 {
+        font-family: SegoeUI, Segoe UI;
+      }
+
+      .cls-7 {
+        fill: #01ff0a;
+      }
+
+      .cls-8 {
+        fill: #ff0101;
+      }
+
+      .cls-9 {
+        fill: #f7ff01;
+      }
+
+      .cls-10 {
+        font-size: 60px;
+      }
+
+      .cls-11 {
+        stroke: none;
+      }
+    </style>
+    <clipPath id="clip-Resultado">
+      <rect x="11449" y="-2516" width="1024" height="768"/>
+    </clipPath>
+  </defs>
+  <g id="Resultado" class="cls-1">
+    <rect class="cls-13" x="11449" y="-2516" width="1024" height="768"/>
+    <path id="Path_256" data-name="Path 256" class="cls-2" d="M2469.5,20.1l-33.6,33.5,33.6,33.6" transform="translate(9041 -2518)"/>
+    <g id="Rectangle_495" data-name="Rectangle 495" class="cls-3" transform="translate(11447 -2515)">
+      <rect class="cls-11" width="1024" height="768"/>
+      <rect class="cls-12" x="0.5" y="0.5" width="1023" height="767"/>
+    </g>
+    <g id="Group_113" data-name="Group 113" transform="translate(11791 -2530)">
+      <text id="Regresar" class="cls-4" transform="translate(480 752)"><tspan x="-100.305" y="0">Regresar</tspan></text>
+      <path id="Path_257" data-name="Path 257" class="cls-5" d="M2463.767,20.1,2435.9,47.883l27.867,27.866" transform="translate(3074.808 777.441) rotate(180)"/>
+    </g>
+    <text id="Franco" class="cls-6" transform="translate(11915 -2400)"><tspan x="-107.985" y="0">Franco</tspan></text>
+    <circle id="Ellipse_158" data-name="Ellipse 158" class="cls-7" cx="29" cy="29" r="29" transform="translate(11618 -2328)"/>
+    <circle id="Ellipse_159" data-name="Ellipse 159" class="cls-8" cx="29" cy="29" r="29" transform="translate(11618 -2198)"/>
+    <circle id="Ellipse_160" data-name="Ellipse 160" class="cls-9" cx="29" cy="29" r="29" transform="translate(11618 -2068)"/>
+    <text id="Quickquiz_1" data-name="Quickquiz 1" class="cls-10" transform="translate(11854 -2285)"><tspan x="-155.493" y="0">Quickquiz 1</tspan></text>
+    <text id="Quickquiz_2" data-name="Quickquiz 2" class="cls-10" transform="translate(11854 -2155)"><tspan x="-155.493" y="0">Quickquiz 2</tspan></text>
+    <text id="Quickquiz_3" data-name="Quickquiz 3" class="cls-10" transform="translate(11854 -2025)"><tspan x="-155.493" y="0">Quickquiz 3</tspan></text>
+    <g id="Group_129" data-name="Group 129" transform="translate(11215 -2530)">
+      <text id="Prueba_otro_final" data-name="Prueba otro final" class="cls-4" transform="translate(480 752)"><tspan x="-191.412" y="0">Prueba otro final</tspan></text>
+      <path id="Path_272" data-name="Path 272" class="cls-5" d="M2463.767,20.1,2435.9,47.883l27.867,27.866" transform="translate(-2180.858 681.591)"/>
+    </g>
+  </g>
+</svg>
