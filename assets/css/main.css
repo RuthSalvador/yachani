@@ -53,6 +53,10 @@ h2 {
   height: 30px;
   max-height: 100%;
 }
+.play input:focus {
+  content: "";
+  border: none;
+}
 ::placeholder {
   color: darkgray;
   font-size: 2vw;
@@ -60,6 +64,7 @@ h2 {
 .play span {
   padding: 3%;
 }
+
 #page2, #page3 {
   width: 100%;
 }
@@ -72,14 +77,14 @@ h2 {
   text-transform: uppercase;
 }
 .content #comedy {
-  background: #;
+  background: yellow;
 }
 .content #mistery {
-  background: #;
+  background: darkorange;
 }
 .content #fantasy {
-  background: #;
+  background: red;
 }
 .content #literal {
-  background: #;
+  background: lightgreen;
 }
