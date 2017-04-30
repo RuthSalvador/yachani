@@ -1,3 +1,15 @@
+var slideIndex = 1;
+var contenedor = document.getElementById('galeria');
+var docFragment=document.createDocumentFragment();
+var option = document.getElementById('literal').addEventListener('click',function(e){
+
+  e.preventDefault();
+  document.getElementsByClassName('page2')[0].classList.remove('page-box');
+  localStorage.setItem("login", document.getElementById('username').value);
+
+  showSlide(1);
+});
+
 var url = "assets/img/img-";
 var portada =[{src:"assets/img/portada-"}]
 var images=[{src :url},{src :url},{src :url},{src :url},{src :url},{src :url},{src :url},{src :url},{src :url},{src :url},{src :url},
@@ -12,62 +24,7 @@ var preguntas=[{question:"¿Que podía curar al rey?",type:"factual",alternative
               {question:"¿Qué hubiera pasado si el príncipe no hubiera salido antes de las 12 del castillo?",type:"inferencial",alternatives:["Hubiera llegado tarde a ver a su padre","Se quedaría una semana más en el castillo","Se quedaría por siempre en el castillo"]}
               ];
 
-
 var decision =[{decision:"Qué haces ante la pregunta del pequeño duendecillo?",alternatives:["Te disculpas por no poder escucharlo, le dices que estás apurado por una urgencia familiar.","Le  dices que no te importa, que estás apurado.","Le explicas lo que ha pasado , tu misión y pides su ayuda."]}];
-
-document.getElementById('page-demo').onclick=function(e){
-  document.getElementById('page-demo').style.display="none";
-  document.getElementsByClassName("page0")[0].classList.remove("page-box");
-}
-
-document.getElementById('protagonista').onclick=function(e){
-  e.preventDefault();
-  document.getElementById('page0').style.display="none";
-  document.getElementById('page1').style.display="block";
-}
-
-document.getElementById('start').onclick=function(e){
-  e.preventDefault();
-  localStorage.setItem("login", document.getElementById('username').value);
-  document.getElementsByClassName("page1")[0].classList.remove("page-box");
-  document.getElementById('page1').style.display="none";
-  document.getElementById('page2').style.display="block";
-}
-
-document.getElementById('literal').onclick=function(e){
-  e.preventDefault();
-
-  document.getElementsByClassName("page2")[0].classList.remove("page-box");
-  document.getElementById('page2').style.display="none";
-  document.getElementById('page3').style.display="block";
-}
-
-var slideIndex = 1;
-var contenedor = document.getElementById('galeria');
-var docFragment=document.createDocumentFragment();
-// var grids = document.getElementsByClassName("grids");
-// for (var i = 0; i < grids.length; i++) {
-//   grids[i].addEventListener("click",function(e){
-//     e.preventDefault();
-//     var galeria = document.getElementById("galeria");
-//     galeria.style.display ="block";
-//     showSlide(2);
-//   })
-// };
-
-
-var option = document.getElementById('agua').addEventListener('click',function(e){
-
-  e.preventDefault();
-  document.getElementsByClassName("page3")[0].classList.remove("page-box");
-  document.getElementById('page3').style.display="none";
-  // document.getElementsByClassName("portada")[0].classList.remove("page-box");
-  // document.getElementsByClassName("portada")[0].classList.remove("page-box");
-  // document.getElementsByTagName('figure')[0].classList.remove("page-box");
-  // document.getElementsByTagName('figure')[0].style.display="block";
-
-  showSlide(1);
-});
 
 docFragment.appendChild(crearImgs(portada[0],"p1"));
 for (var i = 0; i < 2; i++) {
@@ -96,7 +53,6 @@ for (var i = 0; i < 3; i++) {
       e.preventDefault();
         for (var i = 4; i < 5; i++) {
             docFragment.appendChild(crearImgs(images[i],i));
-            console.log(crearImgs(images[i],i));
         }
 
         var div = document.createElement('figure');
@@ -116,14 +72,8 @@ for (var i = 0; i < 3; i++) {
           div2.appendChild(crearAlternativas(preguntas[2].alternatives[i],"p1"));
         }
         docFragment.appendChild(div2);
-        alert("camino1"+this.id);
         contenedor.appendChild(docFragment);
-
-      // }
       ///END Camino 0
-      // if(this.id == "d1"){
-        alert("camino2"+this.id);
-
         docFragment.appendChild(crearImgs(images[7],7));
 
         var div = document.createElement('div');
@@ -245,9 +195,7 @@ function crearAlternativas(alternativa,id){
 }
 
 function plusSlide(n) {
-  console.log("n"+n);
   showSlide(slideIndex += n);
-  console.log(slideIndex+"slide");
 }
 
 function showSlide(index){
@@ -258,14 +206,4 @@ function showSlide(index){
       slide[i].style.display = "none";
    }
    slide[slideIndex-1].style.display = "block";
-   //setTimeout(showSlide, 2000);
 }
-
-  // document.getElementById('previus').addEventListener('click',function(e){
-  //     e.preventDefault();
-  //     plusSlide(-1);
-  // });
-  // document.getElementById('next').addEventListener('click',function(e){
-  //   e.preventDefault();
-  //     plusSlide(1);
-  // });

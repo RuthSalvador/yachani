@@ -106,6 +106,9 @@ h2 {
 .page-box{
   display: none;
 }
+.portada{
+  display: block;
+}
 
 .right {
   float: right;
@@ -117,8 +120,20 @@ h2 {
   z-index: 1;
   margin-bottom: auto;
 }
-#galeria {
+/*#galeria {
   display: none;
+}*/
+
+#d0,#d1, #d2{
+  background: #88ec78;
+  border: none;
+  width: 300px;
+  height: 70px;
+  color: #31332f;
+  margin: 10px 0;
+  padding: 2%;
+  font-size: 16px;
+
 }
 
 
