@@ -32,8 +32,8 @@ En este campo, el escolar podrá elegir el género varios que más prefiera.
 ### Lecturas <br />
 También podrá elegir la lectura que más le agrade. <br />
 Una vez elegido ello, empezará a aparecer la lectura mediante globos de diálogos. <br />
-![lectura1](assets/img/img-1.svg)
-![lectura1](assets/img/img-2.svg)
+![lectura1](assets/img/screenshoot/img1.jpg) <br />
+![lectura2](assets/img/screenshoot/img2.jpg) <br />
 
 ### Preguntas de comprensión lectora <br />
 Cada cierta cantidad de lectura, se realizará una pregunta de comprensión lectora, las cuales pueden ser de tipo factual, inferencial o léxica; teniendo 3 alternativas de respuesta posible.
@@ -54,9 +54,9 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 
 
 ##  Créditos
-* ![MilagrosGutierrez] (https://github.com/mili01gm)
-* ![FlorTello] (https://github.com/FlorTello)
-* ![Miriam Peralta] (https://github.com/miriampc)
-* ![RuthSalvador] (https://github.com/RuthSalvador)
-* ![Jean Pierre]
-* ![Luis]
+* [MilagrosGutierrez] (https://github.com/mili01gm)
+* [FlorTello] (https://github.com/FlorTello)
+* [Miriam Peralta] (https://github.com/miriampc)
+* [RuthSalvador] (https://github.com/RuthSalvador)
+* [Jean Pierre Guevara] (https://www.facebook.com/encuentraelmodo/)
+* [Luis Huayaney] (https://www.linkedin.com/in/luishuayaney/)
