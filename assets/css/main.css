@@ -10,10 +10,10 @@ h2 {
   font-weight: 700;
   margin: 5% auto;
 }
-
-#page-demo {
-  width: 100%;
+.page-box {
+  width: 100%,
 }
+
 #page-demo img {
   width: 30%;
 }
@@ -38,7 +38,6 @@ h2 {
 
 
 #page1 {
-  width: 100%;
   margin: 10% auto;
 }
 .play input {
@@ -52,12 +51,13 @@ h2 {
   border-bottom: 1px solid #00FBAE;
   height: 30px;
   max-height: 100%;
+  font-size: 3vw
 }
 .play input:focus {
   content: "";
   outline: none;
-  font-size: 2vw;
   transition: 1.5s;
+  font-size: 3vw;
 }
 ::placeholder {
   color: darkgray;
@@ -68,15 +68,26 @@ h2 {
 }
 
 #page2, #page3 {
-  width: 100%;
+  font-size: 3vw;
 }
 
 #page2 button {
-  width: 50%;
+  width: 600px;
+  max-width: 100%;
   display: inline-block;
   color: #333;
   border: none;
   text-transform: uppercase;
+}
+.content #comedy,
+.content #mistery,
+.content #fantasy,
+.content #literal {
+  height: 50px;
+  max-height: 100%;
+  color: white;
+  font-weight: 700;
+  font-size: 2.5vw;
 }
 .content #comedy {
   background: yellow;
@@ -89,4 +100,15 @@ h2 {
 }
 .content #literal {
   background: lightgreen;
+}
+
+.right {
+  float: right;
+  z-index: 1;
+  margin-bottom: auto;
+}
+.left {
+  float: left;
+  z-index: 1;
+  margin-bottom: auto;
 }
