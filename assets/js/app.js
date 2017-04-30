@@ -54,10 +54,10 @@ for (var i = 0; i < 3; i++) {
       e.preventDefault();
       console.log(slideIndex);
       if(this.id == "d0"){
-        slideIndex +=7;
-        plusSlide(slideIndex+1);
-        console.log(slideIndex);
-        for (var i = 4; i < 6; i++) {
+        //slideIndex +=7;
+        // plusSlide(7);
+        // console.log(slideIndex);
+        for (var i = 4; i < 5; i++) {
             docFragment.appendChild(crearImgs(images[i],i));
             console.log(crearImgs(images[i],i));
         }
@@ -71,7 +71,7 @@ for (var i = 0; i < 3; i++) {
           div.appendChild(crearAlternativas(preguntas[1].alternatives[i],"p1"));
         }
         docFragment.appendChild(div);
-        for (var i = 6; i < 8; i++) {
+        for (var i = 5; i < 7; i++) {
             docFragment.appendChild(crearImgs(images[i],i));
         }
         var div2 = document.createElement('figure');
@@ -89,7 +89,7 @@ for (var i = 0; i < 3; i++) {
       if(this.id == "d1"){
         alert("camino2"+this.id);
 
-        docFragment.appendChild(crearImgs(images[8],8));
+        docFragment.appendChild(crearImgs(images[7],7));
 
         var div = document.createElement('div');
         div.appendChild(crearPregunta(preguntas[3].question));
@@ -99,6 +99,7 @@ for (var i = 0; i < 3; i++) {
         }
         docFragment.appendChild(div);
 
+        docFragment.appendChild(crearImgs(images[8],8));
         docFragment.appendChild(crearImgs(images[9],9));
         var div2 = document.createElement('div');
         div.classList.add('page-box');
@@ -108,7 +109,6 @@ for (var i = 0; i < 3; i++) {
         }
         docFragment.appendChild(div2);
 
-        docFragment.appendChild(crearImgs(images[10],10));
         contenedor.appendChild(docFragment);
 
       }
@@ -116,7 +116,8 @@ for (var i = 0; i < 3; i++) {
       if(this.id == "d2"){
         alert("camino3"+this.id);
 
-        for (var i = 11; i < 14; i++) {
+
+        for (var i = 9; i < 12; i++) {
             docFragment.appendChild(crearImgs(images[i],i));
         }
         var div = document.createElement('div');
@@ -126,7 +127,7 @@ for (var i = 0; i < 3; i++) {
           div.appendChild(crearAlternativas(preguntas[5].alternatives[i],"p1"));
         }
         docFragment.appendChild(div);
-        for (var i = 14; i < 16; i++) {
+        for (var i = 12; i < 16; i++) {
             docFragment.appendChild(crearImgs(images[i],i));
         }
         var div2 = document.createElement('div');
@@ -137,7 +138,6 @@ for (var i = 0; i < 3; i++) {
         }
         docFragment.appendChild(div2);
 
-        docFragment.appendChild(crearImgs(images[16],16));
       }
       contenedor.appendChild(docFragment);
 
@@ -206,12 +206,14 @@ function crearAlternativas(alternativa,id){
 }
 
 function plusSlide(n) {
+  console.log("n"+n);
   showSlide(slideIndex += n);
+  console.log(slideIndex+"slide");
 }
 
 function showSlide(index){
    var slide = document.getElementsByClassName("page-box");
-   if (index > slide.length) {slideIndex = 1}
+   if (index > 17) {slideIndex = 1}
    if (index < 1) {slideIndex = slide.length}
    for (var i = 0; i < slide.length; i++) {
       slide[i].style.display = "none";
