@@ -10,10 +10,10 @@ h2 {
   font-weight: 700;
   margin: 5% auto;
 }
-
-#page-demo {
-  width: 100%;
+.page-box {
+  width: 100%,
 }
+
 #page-demo img {
   width: 30%;
 }
@@ -38,7 +38,6 @@ h2 {
 
 
 #page1 {
-  width: 100%;
   margin: 10% auto;
 }
 .play input {
@@ -68,7 +67,6 @@ h2 {
 }
 
 #page2, #page3 {
-  width: 100%;
   font-size: 3vw;
 }
 
@@ -101,4 +99,15 @@ h2 {
 }
 .content #literal {
   background: lightgreen;
+}
+
+.right {
+  float: right;
+  z-index: 1;
+  margin-bottom: auto;
+}
+.left {
+  float: left;
+  z-index: 1;
+  margin-bottom: auto;
 }
