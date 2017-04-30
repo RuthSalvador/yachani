@@ -1,0 +1,104 @@
+/*General style*/
+* {
+  font-family: sans-serif;
+  text-align: center;
+  background-color: #F1F1F1;
+}
+h2 {
+  color: #333;
+  font-size: 4vw;
+  font-weight: 700;
+  margin: 5% auto;
+}
+
+#page-demo {
+  width: 100%;
+}
+#page-demo img {
+  width: 30%;
+}
+
+.content #protagonista,
+.content #grupo {
+  display: block;
+  color: white;
+  font-size: 3.5vw;
+  border: none;
+  border-radius: 7%;
+  height: 5%;
+  margin: 2% auto;
+  padding: 1%;
+}
+.content #protagonista {
+  background: #E8001B;
+}
+.content #grupo {
+  background: #FF8C00;
+}
+
+
+#page1 {
+  width: 100%;
+  margin: 10% auto;
+}
+.play input {
+  display: block;
+  text-align: center;
+  margin: 5% auto;
+  background: none;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-bottom: 1px solid #00FBAE;
+  height: 30px;
+  max-height: 100%;
+  font-size: 3vw
+}
+.play input:focus {
+  content: "";
+  outline: none;
+  font-size: 3vw;
+}
+::placeholder {
+  color: darkgray;
+  font-size: 2vw;
+}
+.play span {
+  padding: 3%;
+}
+
+#page2, #page3 {
+  width: 100%;
+  font-size: 3vw;
+}
+
+#page2 button {
+  width: 600px;
+  max-width: 100%;
+  display: inline-block;
+  color: #333;
+  border: none;
+  text-transform: uppercase;
+}
+.content #comedy,
+.content #mistery,
+.content #fantasy,
+.content #literal {
+  height: 50px;
+  max-height: 100%;
+  color: white;
+  font-weight: 700;
+  font-size: 2.5vw;
+}
+.content #comedy {
+  background: yellow;
+}
+.content #mistery {
+  background: darkorange;
+}
+.content #fantasy {
+  background: red;
+}
+.content #literal {
+  background: lightgreen;
+}

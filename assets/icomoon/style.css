@@ -38,6 +38,9 @@
 }
 .icon-play:before {
   content: "\44";
+  color: #00FBAE;
+  font-size: 7vw;
+  margin: 2%;
 }
 .icon-share:before {
   content: "\45";
@@ -60,4 +63,3 @@
 .icon-down:before {
   content: "\51";
 }
-

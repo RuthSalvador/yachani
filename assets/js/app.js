@@ -1,5 +1,8 @@
-var url = "assets/img/img-";
-var portada =[{src:""}]
+var contenedor = document.getElementById('galeria');
+var docFragment=document.createDocumentFragment();
+
+var url = "assets/img/fabula-0.jpg";
+var portada =[{src:"assets/img/fabula-1.jpg"}]
 var images=[{src :url},{src :url},{src :url},{src :url},{src :url},{src :url},{src :url},{src :url},{src :url},{src :url},{src :url},
             {src :url},{src :url},{src :url},{src :url},{src :url}];
 // var preguntas=[{question:"pregunta1?",type:"literal",alternatives:["Donde ","en la escuela",""]},{question:"pregunta2?",type:"literal",alternatives:["Donde ","en la escuela",""]},
@@ -17,12 +20,10 @@ var preguntas=[{question:"¿Que podía curar al rey?",type:"factual",alternative
               {question:"¿Qué hubiera pasado si el príncipe no hubiera salido antes de las 12 del castillo?",type:"inferencial",alternatives:["Hubiera llegado tarde a ver a su padre","Se quedaría una semana más en el castillo","Se quedaría por siempre en el castillo"]}
               ];
 
-var decision =[{question:"Qué haces ante la pregunta del pequeño duendecillo?",alternatives:["Te disculpas por no poder escucharlo, le dices que estás apurado por una urgencia familiar.","Le  dices que no te importa, que estás apurado.","Le explicas lo que ha pasado , tu misión y pides su ayuda."]}];
+var decision =[{decision:"Qué haces ante la pregunta del pequeño duendecillo?",alternatives:["Te disculpas por no poder escucharlo, le dices que estás apurado por una urgencia familiar.","Le  dices que no te importa, que estás apurado.","Le explicas lo que ha pasado , tu misión y pides su ayuda."]}];
 
-var docFragment=document.createDocumentFragment();
 docFragment.appendChild(crearImgs(portada[0],"p1"));
 for (var i = 0; i < 2; i++) {
-    crearImgs(images[i],i);
     docFragment.appendChild(crearImgs(images[i],i));
 }
 docFragment.appendChild(crearPregunta(preguntas[0].question));
@@ -35,11 +36,12 @@ for (var i = 2; i < 4; i++) {
 }
 docFragment.appendChild(crearPregunta(decision[0].decision));
 for (var i = 0; i < 3; i++) {
-    var buton = document.createElement('button');
-    buton.appendChild(createTextNode(decision[0][i]));
+  var buton = document.createElement('button');
+    buton.appendChild(document.createTextNode(decision[0].alternatives[i]));
     buton.setAttribute('id','d'+i);
     buton.addEventListener('click',function(){
       if(this.id == "d0"){
+        alert("camino1"+this.id);
         for (var i = 4; i < 6; i++) {
             docFragment.appendChild(crearImgs(images[i],i));
         }
@@ -57,6 +59,7 @@ for (var i = 0; i < 3; i++) {
       }
       ///END Camino 0
       if(this.id == "d1"){
+        alert("camino2"+this.id);
 
         docFragment.appendChild(crearImgs(images[8],8));
         docFragment.appendChild(crearPregunta(preguntas[3].question));
@@ -74,6 +77,8 @@ for (var i = 0; i < 3; i++) {
       }
       //endn Camino 1
       if(this.id == "d2"){
+        alert("camino3"+this.id);
+
         for (var i = 11; i < 14; i++) {
             docFragment.appendChild(crearImgs(images[i],i));
         }
@@ -92,8 +97,9 @@ for (var i = 0; i < 3; i++) {
       }
 
     });
+    docFragment.appendChild(buton);
   }
-}
+contenedor.appendChild(docFragment);
 
   function crearImgs(e,id){
     var figure=document.createElement('figure');
@@ -102,28 +108,27 @@ for (var i = 0; i < 3; i++) {
     var spanNext=document.createElement('span');
 
     figure.classList.add("class","js-figure");
-    image.setAttribute("alt",e.name);
-    image.src=e.src+id+".jpg";
+    image.setAttribute("alt","lecturas");
+    image.src=e.src;//+id+".jpg";
     spanPrevious.classList.add("class",'icon-before');
     spanNext.classList.add("class",'icon-next');
 
     figure.appendChild(image);
     figure.appendChild(spanPrevious);
     figure.appendChild(spanNext);
-    docFragment.appendChild(figure);
-    contenedor.appendChild(docFragment);
+    return figure;
 }
 function crearPregunta(parrafo){
   var pregunta = document.createElement('h2');
-  pregunta.innerHTML = parrafo.question;
+  pregunta.innerHTML = parrafo;
   return pregunta;
 }
-function crearAlternativas(alternativa,id,i){
+function crearAlternativas(alternativa,id){
   var div = document.createElement('div');
   var input = document.createElement('input');
   input.setAttribute('type','radio');
   input.setAttribute('name','p'+id);
   div.appendChild(input);
-  div.appendChild(document.createTextNode(alternativa.alternatives[i]));
+  div.appendChild(document.createTextNode(alternativa));
   return div;
 }
