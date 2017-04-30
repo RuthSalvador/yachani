@@ -9,32 +9,25 @@
         fill: url(#pattern);
       }
 
-      .cls-3, .cls-4 {
+      .cls-3 {
         fill: none;
+        stroke: #ccc;
         stroke-width: 5px;
       }
 
-      .cls-3 {
-        stroke: #ccc;
-      }
-
-      .cls-4 {
-        stroke: #fff;
-      }
-
-      .cls-5, .cls-6, .cls-7 {
+      .cls-4, .cls-5, .cls-6 {
         fill: #fff;
       }
 
-      .cls-5 {
+      .cls-4 {
         font-size: 81px;
       }
 
-      .cls-5, .cls-6 {
+      .cls-4, .cls-5 {
         font-family: SegoeUI, Segoe UI;
       }
 
-      .cls-6 {
+      .cls-5 {
         font-size: 50px;
       }
     </style>
@@ -46,13 +39,11 @@
     </clipPath>
   </defs>
   <g id="Portada" class="cls-1">
-    <rect class="cls-7" x="-8810" y="-2516" width="1024" height="768"/>
+    <rect class="cls-6" x="-8810" y="-2516" width="1024" height="768"/>
     <rect id="Rectangle_41" data-name="Rectangle 41" class="cls-2" width="1024" height="768" transform="translate(-8808 -2516)"/>
     <line id="Line_5" data-name="Line 5" class="cls-3" y2="562" transform="translate(-7788.5 -2515.5)"/>
-    <path id="Path_4" data-name="Path 4" class="cls-4" d="M2469.5,20.1l-33.6,33.5,33.6,33.6" transform="translate(-11218 -2518)"/>
-    <path id="Path_5" data-name="Path 5" class="cls-4" d="M2494.513,20.1,2435.9,78.538l58.613,58.612" transform="translate(-8376.95 657.35) rotate(-90)"/>
     <text id="EL_AGUA_DE_LA_VIDA" data-name="EL AGUA
-DE LA VIDA" class="cls-5" transform="translate(-7853 -2377)"><tspan x="-313.44" y="0">EL AGUA</tspan><tspan x="-413.82" y="107">DE LA VIDA</tspan></text>
-    <text id="Versión_libre_-_Hermanos_Grimm" data-name="Versión libre - Hermanos Grimm" class="cls-6" transform="translate(-7853 -2196)"><tspan x="-710.522" y="0">Versión libre - Hermanos Grimm</tspan></text>
+DE LA VIDA" class="cls-4" transform="translate(-7853 -2377)"><tspan x="-313.44" y="0">EL AGUA</tspan><tspan x="-413.82" y="107">DE LA VIDA</tspan></text>
+    <text id="Versión_libre_-_Hermanos_Grimm" data-name="Versión libre - Hermanos Grimm" class="cls-5" transform="translate(-7853 -2196)"><tspan x="-710.522" y="0">Versión libre - Hermanos Grimm</tspan></text>
   </g>
 </svg>
