@@ -2,46 +2,84 @@
 * {
   font-family: sans-serif;
   text-align: center;
-  background-color: #333;
+  background-color: #F1F1F1;
 }
-
-#page0 h2 {
-  font-size: 2rem;
+h2 {
+  color: #333;
+  font-size: 4vw;
   font-weight: 700;
   margin: 5% auto;
 }
-#page0 button {
+
+#page-demo {
+  width: 100%;
+}
+#page-demo img {
+  width: 30%;
+}
+
+.content #protagonista,
+.content #grupo {
   display: block;
   color: white;
-  background: #00FBAE;
-  font-size: 2rem;
+  font-size: 3.5vw;
   border: none;
   border-radius: 7%;
   height: 5%;
   margin: 2% auto;
   padding: 1%;
 }
+.content #protagonista {
+  background: #E8001B;
+}
+.content #grupo {
+  background: #FF8C00;
+}
+
+
 #page1 {
   width: 100%;
   margin: 10% auto;
 }
-
 .play input {
   display: block;
   text-align: center;
-  margin: 0 auto;
+  margin: 5% auto;
   background: none;
   border-top: none;
   border-left: none;
   border-right: none;
+  border-bottom: 1px solid #00FBAE;
+  height: 30px;
+  max-height: 100%;
+}
+::placeholder {
+  color: darkgray;
+  font-size: 2vw;
 }
 .play span {
-  background-color: #00FBAE;
-  border-radius: 50%;
-  padding: 2%;
+  padding: 3%;
+}
+#page2, #page3 {
+  width: 100%;
 }
 
-#page2 {
-  width: 100%;
+#page2 button {
+  width: 50%;
   display: inline-block;
+  color: #333;
+  border: none;
+  text-transform: uppercase;
+}
+.content #comedy {
+  background: #;
+}
+.content #mistery {
+  background: #;
+}
+.content #fantasy {
+  background: #;
+}
+.content #literal {
+  background: #;
 }
